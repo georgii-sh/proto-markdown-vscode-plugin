@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.vsix
+.vscode-test/
+
+.claude
+node_modules
+dist
+.DS_Store
+
+# Claude Code memory files
+.claude/memory/**
