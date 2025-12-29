@@ -1,9 +1,9 @@
 {
-  "name": "proto-markdown-preview",
+  "name": "proto-markdown-vscode-extension",
   "type": "commonjs",
-  "displayName": "Proto Markdown Preview",
+  "displayName": "Proto Markdown Preview for VS Code",
   "description": "Renders Proto Markdown syntax in VS Code's Markdown preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "protomarkdown",
   "engines": {
     "vscode": "^1.80.0"
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/georgii-sh/proto-markdown-parser"
+    "url": "https://github.com/georgii-sh/proto-markdown-vscode-plugin"
   },
   "license": "Apache-2.0",
   "activationEvents": [],

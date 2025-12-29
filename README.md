@@ -2,7 +2,7 @@
 
 A VS Code extension that renders [Proto Markdown](https://www.protomarkdown.org) syntax in the built-in Markdown preview.
 
-![Proto Markdown Preview](https://www.protomarkdown.org/preview-screenshot.png)
+![Proto Markdown Preview](https://www.protomarkdown.org/proto-markdown-vscode-extension.png)
 
 ## Features
 
@@ -15,7 +15,6 @@ A VS Code extension that renders [Proto Markdown](https://www.protomarkdown.org)
 
 Use fenced code blocks with the `proto`, `protomarkdown`, or `protomd` language identifier:
 
-````markdown
 ```proto
 [-- Login Form
   # Welcome Back
@@ -25,83 +24,6 @@ Use fenced code blocks with the `proto`, `protomarkdown`, or `protomd` language 
   [(Login)][Forgot Password]
 --]
 ```
-````
-
-## Supported Syntax
-
-### Form Fields
-
-```proto
-Email ___                              # Text input
-Password __*                           # Password input
-Description |___|                      # Textarea
-Country __> [USA, Canada, Mexico]      # Dropdown
-Remember me __[]                       # Checkbox
-Gender __() [Male, Female, Other]      # Radio group
-```
-
-### Cards & Layout
-
-```proto
-[-- Card Title
-  Content inside the card
---]
-
-[grid cols-2 gap-4
-  [-- Card 1 --]
-  [-- Card 2 --]
-]
-```
-
-### Buttons
-
-```proto
-[(Primary Button)]     # Default/filled button
-[Outline Button]       # Outline button
-[(Submit)][Cancel]     # Multiple buttons
-
-# Navigation buttons (for workflows)
-[(Next) -> step2]
-[Back -> step1]
-```
-
-### Tables
-
-```proto
-| Name | Age | City |
-|------|-----|------|
-| John | 30  | NYC  |
-| Jane | 25  | LA   |
-```
-
-### Text Formatting
-
-```proto
-This is *bold* text
-This is _italic_ text
-This is _*bold and italic*_ text
-```
-
-### Workflows
-
-```proto
-[workflow
-  [screen welcome
-    # Welcome
-    [(Get Started) -> login]
-  ]
-  [screen login
-    # Login
-    Email ___
-    Password __*
-    [(Login) -> dashboard]
-  ]
-  [screen dashboard
-    # Dashboard
-    Welcome to your app!
-  ]
-]
-```
 
 ## Installation
 
@@ -110,7 +32,8 @@ This is _*bold and italic*_ text
 1. Build the extension:
 
    ```bash
-   cd vscode-extension
+   git clone https://github.com/georgii-sh/proto-markdown-vscode-plugin
+   cd proto-markdown-vscode-plugin
    npm install
    npm run compile
    npm run package
@@ -127,8 +50,8 @@ This is _*bold and italic*_ text
 1. Clone and build:
 
    ```bash
-   git clone https://github.com/georgii-sh/proto-markdown-parser
-   cd proto-markdown-parser/vscode-extension
+   git clone https://github.com/georgii-sh/proto-markdown-vscode-plugin
+   cd proto-markdown-vscode-plugin
    npm install
    npm run compile
    ```

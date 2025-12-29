@@ -5,19 +5,19 @@ Open the markdown preview (Cmd+Shift+V or Ctrl+Shift+V) to see rendered componen
 ## Form Example
 
 ```proto
-[-- User Registration
-  # Create Account
+  [-- User Registration
+    # Create Account
 
-  First Name ___ Last Name ___
-  Email ___
-  Password __*
+    First Name ___ Last Name ___zz
+    Email ___
+    Password __*
 
-  Country __> [USA, Canada, UK, Germany, France]
+    Country __> [USA, Canada, UK, Germany, France]
 
-  I agree to terms __[]
+    I agree to terms __[]
 
-  [(Sign Up)][Cancel]
---]
+    [(Sign Up)][Cancel]
+  --]
 ```
 
 ## Workflow Example
@@ -59,11 +59,11 @@ Open the markdown preview (Cmd+Shift+V or Ctrl+Shift+V) to see rendered componen
 ## Table Example
 
 ```proto
-| Product | Price | Stock |
-|---------|-------|-------|
-| Widget  | $10   | 50    |
-| Gadget  | $25   | 30    |
-| Thing   | $5    | 100   |
+  | Product | Price | Stock |
+  |---------|-------|-------|
+  | Widget  | $10   | 50    |
+  | Gadget  | $25   | 30    |
+  | Thing   | $5    | 100   |
 ```
 
 ## Text Formatting
